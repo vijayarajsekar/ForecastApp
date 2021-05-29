@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Forecast</string>
+
+    <string name="bottom_menu_1">Today</string>
+    <string name="bottom_menu_2">7 Days</string>
+    <string name="bottom_menu_3">Settings</string>
+
+    <string name="title1">Current Weather</string>
+    <string name="title2">Feature Weather</string>
+    <string name="title3">Feature Weather Details</string>
+    <string name="title4">Settings</string>
+
 </resources>

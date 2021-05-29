@@ -54,6 +54,9 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
     kapt "androidx.room:room-compiler:$room_version"
 
+    // Timber Log
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
     // Gson
     implementation "com.google.code.gson:gson:2.8.6"
 
@@ -83,8 +86,8 @@ dependencies {
     kapt 'com.github.bumptech.glide:compiler:4.8.0'
 
     // Groupie RecyclerView
-    implementation 'com.xwray:groupie:2.1.0'
-    implementation 'com.xwray:groupie-kotlin-android-extensions:2.1.0'
+    implementation 'com.xwray:groupie:2.5.1'
+    implementation 'com.xwray:groupie-kotlin-android-extensions:2.8.0'
 
     // Preference
     implementation "androidx.preference:preference:1.1.1"
