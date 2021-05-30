@@ -6,6 +6,7 @@
     tools:context=".ui.fragments.currentWeather.CurrentWeather">
 
     <TextView
+        android:id="@+id/txt_respose"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Current" />
