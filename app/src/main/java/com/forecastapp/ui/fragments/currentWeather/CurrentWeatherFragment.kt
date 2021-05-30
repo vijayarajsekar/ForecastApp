@@ -13,13 +13,13 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
-class CurrentWeather : Fragment() {
+class CurrentWeatherFragment : Fragment() {
 
     companion object {
-        fun newInstance() = CurrentWeather()
+        fun newInstance() = CurrentWeatherFragment()
     }
 
-    private lateinit var viewModel: CurrentWeatherViewModel
+    private lateinit var fragmentViewModel: CurrentWeatherFragmentViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,14 +30,14 @@ class CurrentWeather : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(CurrentWeatherViewModel::class.java)
+        fragmentViewModel = ViewModelProvider(this).get(CurrentWeatherFragmentViewModel::class.java)
         // TODO: Use the ViewModel
 
         val weatherstackApi = WeatherstackApi()
 
         GlobalScope.launch(Dispatchers.Main) {
             val currentWeather = weatherstackApi.getCurrentWeater("Vellore").await()
-            txt_respose.text = currentWeather.location.toString()
+            txt_respose.text = currentWeather.toString()
         }
     }
 

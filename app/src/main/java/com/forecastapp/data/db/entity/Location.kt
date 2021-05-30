@@ -1,4 +1,4 @@
-package com.forecastapp.data.apiresponse
+package com.forecastapp.data.db.entity
 
 
 import com.google.gson.annotations.SerializedName

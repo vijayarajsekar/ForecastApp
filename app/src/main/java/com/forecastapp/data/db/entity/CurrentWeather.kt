@@ -1,8 +1,13 @@
-package com.forecastapp.data.apiresponse
+package com.forecastapp.data.db.entity
 
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
+const val CURRENT_WEATER_ID = 0
+
+@Entity(tableName = "CurrentWeather")
 data class CurrentWeather(
     @SerializedName("observation_time")
     val observationTime: String,
@@ -29,4 +34,7 @@ data class CurrentWeather(
     val visibility: Int,
     @SerializedName("is_day")
     val isDay: String
-)
+) {
+    @PrimaryKey(autoGenerate = false)
+    var id: Int = CURRENT_WEATER_ID
+}

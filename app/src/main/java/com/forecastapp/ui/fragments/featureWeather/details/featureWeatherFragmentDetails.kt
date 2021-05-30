@@ -1,4 +1,4 @@
-package com.forecastapp.ui.fragments.featureWeather.list
+package com.forecastapp.ui.fragments.featureWeather.details
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,24 +8,24 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.forecastapp.R
 
-class featureWeatherList : Fragment() {
+class featureWeatherFragmentDetails : Fragment() {
 
     companion object {
-        fun newInstance() = featureWeatherList()
+        fun newInstance() = featureWeatherFragmentDetails()
     }
 
-    private lateinit var viewModel: featureWeatherListViewModel
+    private lateinit var fragmentViewModel: featureWeatherDetailsFragmentViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.feature_weather_list, container, false)
+        return inflater.inflate(R.layout.feature_weather_details, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(featureWeatherListViewModel::class.java)
+        fragmentViewModel = ViewModelProvider(this).get(featureWeatherDetailsFragmentViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

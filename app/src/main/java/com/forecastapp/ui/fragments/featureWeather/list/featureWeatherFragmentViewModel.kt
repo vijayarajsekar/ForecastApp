@@ -2,6 +2,6 @@ package com.forecastapp.ui.fragments.featureWeather.list
 
 import androidx.lifecycle.ViewModel
 
-class featureWeatherListViewModel : ViewModel() {
+class featureWeatherFragmentViewModel : ViewModel() {
     // TODO: Implement the ViewModel
 }

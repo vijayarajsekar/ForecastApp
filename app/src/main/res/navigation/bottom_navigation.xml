@@ -7,21 +7,21 @@
 
     <fragment
         android:id="@+id/currentWeather"
-        android:name="com.forecastapp.ui.fragments.currentWeather.CurrentWeather"
+        android:name="com.forecastapp.ui.fragments.currentWeather.CurrentWeatherFragment"
         android:label="@string/title1"
         tools:layout="@layout/current_weather" />
     <fragment
         android:id="@+id/featureWeatherList"
-        android:name="com.forecastapp.ui.fragments.featureWeather.list.featureWeatherList"
+        android:name="com.forecastapp.ui.fragments.featureWeather.list.featureWeatherFragment"
         android:label="@string/title2"
         tools:layout="@layout/feature_weather_list" />
     <fragment
         android:id="@+id/featureWeatherDetails"
-        android:name="com.forecastapp.ui.fragments.featureWeather.details.featureWeatherDetails"
+        android:name="com.forecastapp.ui.fragments.featureWeather.details.featureWeatherFragmentDetails"
         android:label="@string/title3"
         tools:layout="@layout/feature_weather_details" />
     <fragment
         android:id="@+id/weatherSettings"
-        android:name="com.forecastapp.ui.fragments.settings.weatherSettings"
+        android:name="com.forecastapp.ui.fragments.settings.weatherSettingsFragment"
         android:label="@string/title4" />
 </navigation>
